@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var text: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -17,5 +18,10 @@ class ViewController: UIViewController {
     // Hint: `performSegue` is the way
     
 
+    @IBAction func buttontapped(_ sender: Any) {
+        performSegue(withIdentifier: "page1", sender: nil)
+
+    }
+    
 }
 
